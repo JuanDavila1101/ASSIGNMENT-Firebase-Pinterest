@@ -7,9 +7,9 @@ const navBar = () => {
   </a>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-link active" href="#" id="all-pins">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link active" href="#" id="all-pins">Home<span class="sr-only">(current)</span></a>
       <a class="nav-link" href="#" id="all-boards">Boards</a>
-      <a class="nav-link" href="#" id="board-pins">Pins</a>
+      <a class="nav-link" href="#" id="show-pins">Pins</a>
     </div>
   </div>
 <div id="login-form-container"></div>

@@ -1,12 +1,5 @@
-@import "~bootstrap/scss/bootstrap";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
-
-// body {
-//   background-color: antiquewhite;
-//   color: brown;
-//   text-align: center;
-//   margin-top: 100px;
-// }
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 body {
   background-color: black;
@@ -19,19 +12,8 @@ body {
   margin-top: 100px;
   align-content: center;
 
-  // #add-button {
-  //   margin: 0 auto;
-  // }
-
-  // #form-container {
-  //   width: 60%;
-  //   margin: auto;
-  //   justify-content: center;
-  //   color: white;
-
-    // #formModal {
-    //   color: black;
-    // }
+  #add-button {
+    margin: 0 auto;
   }
 
   #boards {
@@ -46,15 +28,21 @@ body {
       width: 300px;
       margin: 5px;
       border-radius: 10px;
-
-      .sale-badge {
-        font-size: 1em;
-      }
     }
-
-    // .table {
-    //   margin: 10px;
-    //   width: 80%;
-    //   margin: 0 auto;
-    // }
   }
+
+  #pins {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+
+    .card {
+      width: 300px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+  }
+}

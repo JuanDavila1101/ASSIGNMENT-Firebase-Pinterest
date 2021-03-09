@@ -1,21 +1,41 @@
-// import signOut from '../../helpers/signOut';
-import getBoards from '../../helpers/data/boardsData';
+import { getBoards } from '../../helpers/data/boardsData';
 import { showBoards, emptyBoards } from '../forms/boards';
+import { getPins } from '../../helpers/data/pinsData';
+import { showPins, emptyPins } from '../forms/pins';
 
 const navigationEvents = (uid) => {
   // LOGOUT BUTTON
   // document.querySelector('#logout-button').addEventListener('click', signOut);
 
-  console.warn(uid);
+  // ALL PINS
+  document.querySelector('#all-pins').addEventListener('click', () => {
+    getPins().then((pinsArray) => {
+      if (pinsArray.length) {
+        showPins(pinsArray);
+      } else {
+        emptyPins();
+      }
+    });
+  });
 
   // ALL BOARDS
   document.querySelector('#all-boards').addEventListener('click', () => {
-    // GET ALL BOOKS on click
     getBoards(uid).then((boardsArray) => {
       if (boardsArray.length) {
         showBoards(boardsArray);
       } else {
         emptyBoards();
+      }
+    });
+  });
+
+  // ALL PINS
+  document.querySelector('#show-pins').addEventListener('click', () => {
+    getPins().then((pinsArray) => {
+      if (pinsArray.length) {
+        showPins(pinsArray);
+      } else {
+        emptyPins();
       }
     });
   });
