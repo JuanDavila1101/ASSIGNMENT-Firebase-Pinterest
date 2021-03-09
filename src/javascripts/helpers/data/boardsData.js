@@ -1,5 +1,3 @@
-// import firebase from 'firebase/app';
-// import firebase from 'firebase/app/';
 import 'firebase/auth';
 import axios from 'axios';
 import firebaseConfig from '../apiKeys';
@@ -8,9 +6,7 @@ import firebaseConfig from '../apiKeys';
 const dbUrl = firebaseConfig.databaseURL;
 
 // GET BOARDS
-// TODO: Update this to only get the current logged in user's boards
 const getBoards = (uid) => new Promise((resolve, reject) => {
-  console.warn(`${dbUrl}/boards.json?orderBy="UID"&equalTo="${uid}"`);
   axios.get(`${dbUrl}/boards.json?orderBy="UID"&equalTo="${uid}"`)
     .then((response) => {
       if (response.data) {
@@ -28,4 +24,11 @@ const deleteBoard = (firebaseKey, uid) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export { getBoards, deleteBoard };
+// GET SINGLE BOARD
+const getSingleBoard = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/boards/${firebaseKey}.json`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
+export { getBoards, deleteBoard, getSingleBoard };
