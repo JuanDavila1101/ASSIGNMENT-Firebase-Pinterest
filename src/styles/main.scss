@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   align-content: center;
 
   #add-button {
@@ -23,6 +23,7 @@ body {
     text-align: center;
     margin: auto;
     justify-content: center;
+    color: white;
 
     .card {
       width: 300px;
@@ -38,6 +39,7 @@ body {
     text-align: center;
     margin: auto;
     justify-content: center;
+    color: white;
 
     .card {
       width: 300px;
@@ -46,3 +48,17 @@ body {
     }
   }
 }
+
+.pinbtns {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  // margin: auto;
+  // justify-content: center;
+}
+
+// .noPins {
+//   display: flex;
+//   flex-flow: row wrap;
+//   text-align: center;
+// }
