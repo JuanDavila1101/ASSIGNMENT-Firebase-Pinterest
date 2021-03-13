@@ -3,6 +3,8 @@ import { showBoards, emptyBoards } from '../forms/boards';
 import { getPins } from '../../helpers/data/pinsData';
 import { showPins, emptyPins } from '../forms/pins';
 
+// let boardOrPin = '';
+
 const navigationEvents = (uid) => {
   // LOGOUT BUTTON
   // document.querySelector('#logout-button').addEventListener('click', signOut);
