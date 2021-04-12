@@ -1,4 +1,20 @@
 # Pinterest
+Welcome to the Pinterest project board, where you have boards and pins that live on that board, you and create new board or create new pins for that board.
+You can update a pin and make it live on a different board or change other fields like the pin’s picture or name.
+You may also, delete a pin or delete a board deleting all the pin that belong to that board.
+
+## Deployed site
+## Deployed Netlify site: [Pinterest-deployed-site](https://juan-davila-firebase-pinterest.netlify.app/#)
+
+## Loom Pinterest Video
+### Loom Video: [Pinterest-video](https://www.loom.com/share/87c76c7f06b1414b8b754022efa2e0e1)
+
+## Firebase Pinterest site Code
+### GitHub Firebase Pinterest link [Firebase-Pinterest-GitHub_link](https://github.com/JuanDavila1101/ASSIGNMENT-Firebase-Pinterest)
+
+
+### Assigment-Firebase-Pinterest
+# Pinterest
 
 Your team has been tasked with creating pinterest.  If you live under a rock and have never used pinterest before go figure out what it does. TLDR; users create boards and can pin urls to the boards
 
